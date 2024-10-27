@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="calculator.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:calculator"
+    Shell.FlyoutBehavior="Disabled"
+    Title="calculator">
+
+
+        
+        <Shell.Items>
+            <ShellSection Title="Ana Sayfa">
+                <ShellContent ContentTemplate="{DataTemplate local:LoginPage}" />
+            </ShellSection>
+            
+            <ShellSection Title="Hesap Makinesi">
+                <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+            </ShellSection>
+            
+        </Shell.Items>
+
+    </Shell>
+
